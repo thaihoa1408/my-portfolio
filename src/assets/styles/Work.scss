@@ -1,0 +1,33 @@
+.work-container {
+  max-width: 1000px;
+  margin: 0px auto;
+  padding: 100px 0px;
+  margin-bottom: 100px;
+  h2 {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 0px 40px;
+    width: 100%;
+    font-size: clamp(26px, 5vw, var(--fz-heading));
+    font-family: var(--font-mono);
+    font-weight: 600;
+    color: var(--lightest-slate);
+    line-height: 1.1;
+    white-space: nowrap;
+    span {
+      margin-right: 5px;
+      font-size: var(--fz-xxl);
+      color: var(--green);
+    }
+    &::after {
+      content: '';
+      display: block;
+      width: 300px;
+      height: 1px;
+      margin-left: 20px;
+      background-color: var(--lightest-navy);
+    }
+  }
+}

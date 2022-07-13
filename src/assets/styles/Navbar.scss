@@ -1,0 +1,52 @@
+.navbar {
+  .logo {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: var(--green);
+    clip-path: polygon(
+      30% 0%,
+      70% 0%,
+      100% 30%,
+      100% 70%,
+      70% 100%,
+      30% 100%,
+      0% 70%,
+      0% 30%
+    );
+  }
+  .logo::before {
+    content: 'H';
+    display: block;
+    position: relative;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--green);
+    top: 2.5px;
+    left: 2.5px;
+    height: 45px;
+    width: 45px;
+    background-color: var(--navy);
+    clip-path: inherit;
+  }
+  .nav-link {
+    margin: 0 px 5 px;
+    font-size: var(--fz-sm);
+    font-family: var(--font-mono);
+    color: var(--lightest-slate);
+    span {
+      color: var(--green);
+    }
+  }
+  button {
+    background: transparent;
+    color: var(--green);
+    border: 1px solid var(--green);
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+    &:hover {
+      background-color: var(--green-tint);
+    }
+  }
+}

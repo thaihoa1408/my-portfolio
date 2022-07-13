@@ -1,0 +1,81 @@
+.hero-container {
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0px auto;
+  padding: 150px 0px;
+  max-width: 1000px;
+  h1 {
+    margin: 0 0 25px 4px;
+    color: var(--green);
+    font-family: var(--font-mono);
+    font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
+    font-weight: 400;
+  }
+  h2 {
+    margin: 0px;
+    font-size: clamp(40px, 8vw, 80px);
+    font-weight: 600;
+    color: var(--lightest-slate);
+    line-height: 1.1;
+  }
+  h3 {
+    margin-top: 10px;
+    color: var(--slate);
+    line-height: 1.1;
+    font-size: clamp(30px, 5vw, 65px);
+    .typing-erase {
+      width: 0;
+      max-width: max-content;
+      overflow: hidden;
+      padding-right: 5px;
+      border-right: 0.05em solid #464545; /* The typwriter cursor */
+      white-space: nowrap;
+      animation: 7s typing-erase 0s steps(50, end) infinite,
+        blink-caret 0.5s step-end infinite;
+    }
+  }
+  p {
+    margin: 20px 0px 0px;
+    max-width: 600px;
+  }
+  button {
+    margin-top: 20px;
+    background: transparent;
+
+    border: 1px solid var(--green);
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+    &:hover {
+      background-color: var(--green-tint);
+    }
+    a {
+      color: var(--green);
+      text-decoration: none;
+    }
+  }
+}
+/* The type and erase effect */
+@keyframes typing-erase {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  90%,
+  100% {
+    width: 0;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: gray;
+  }
+}
