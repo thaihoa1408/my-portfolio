@@ -13,9 +13,6 @@ export default function Hero() {
         helps users accomplish what they need to do. I have a strong combination
         of technical ability and creativity.
       </p>
-      <button>
-        <a href='#contact'>Hire me</a>
-      </button>
     </div>
   );
 }

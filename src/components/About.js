@@ -1,5 +1,6 @@
 import React from 'react';
 import '../assets/styles/About.scss';
+import avatar from '../assets/images/avatar.jpg';
 export default function About() {
   return (
     <section className='about-container' id='about'>
@@ -43,10 +44,7 @@ export default function About() {
         <div className='col-md-6'>
           <div className='about-img'>
             <div>
-              <img
-                src='https://media.vov.vn/sites/default/files/styles/large/public/2021-04/a0f75bac374deca8c886ffd78af05d3c.jpg'
-                alt=''
-              />
+              <img src={avatar} alt='' />
               <div className='about-img-border'></div>
             </div>
           </div>
