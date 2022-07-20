@@ -98,7 +98,7 @@ export default function Work() {
   return (
     <section className='work-container' id='work'>
       <h2>
-        <span>03. </span> Some Things I’ve Built
+        <span>03. </span> My Projects
       </h2>
       <div className='row gy-3'>
         {projectList.map((item, index) => {
