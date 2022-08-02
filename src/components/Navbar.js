@@ -44,7 +44,10 @@ export default function Navbar() {
               </a>
             </li>
             <li className='nav-item'>
-              <a className='nav-link'>
+              <a
+                className='nav-link'
+                href='https://drive.google.com/file/d/1w6X2mNjOuOZcfo1IrTrv92hSNDO4eA79/view?usp=sharing'
+              >
                 <button>Resume</button>
               </a>
             </li>
